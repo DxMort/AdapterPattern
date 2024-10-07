@@ -1,4 +1,4 @@
-﻿using AdapterPattern;
+using AdapterPattern;
 public interface PCGame
 {
     string getTitle();
@@ -29,8 +29,8 @@ public class PCGameAdapter: PCGame
     public Requirements getRequirements()
     {
         return new Requirements(
-            computerGame.getMinimumGpuMemoryInMegabytes(),
-            computerGame.getDiskSpaceNeededInGB(),
+            computerGame.getMinimumGpuMemoryInMegabytes() * 8 / 1024,
+            computerGame.getDiskSpaceNeededInGB() * 8,
             computerGame.getRamNeededInGb(),
             computerGame.getCoreSpeedInGhz(),
             computerGame.getCoresNeeded()
@@ -43,24 +43,24 @@ public class Program
     {
         ComputerGame game1 = new ComputerGame("Cyberpunk 2077", PegiAgeRating.P18,
                 100,     // бюджет
-                8192,    // минимальный объём видеопамяти в МБ
-                100,     // минимальный объём диска в ГБ
-                16,      // требуется оперативной памяти в Гб
+                8192,    // минимальный объём видеопамяти
+                100,     // минимальный объём диска
+                16,      // требуется оперативной памяти
                 8,       // количество ядер процессора
                 3.5);    // частота процессора
         ComputerGame game2 = new ComputerGame("The Witcher 3: Wild Hunt", PegiAgeRating.P16,
                 50,      // бюджет
-                6144,    // минимальный объём видеопамяти в МБ
-                50,      // минимальный объём диска в ГБ
-                12,      // требуется оперативной памяти в Гб
+                4096,    // минимальный объём видеопамяти
+                50,      // минимальный объём диска
+                12,      // требуется оперативной памяти
                 4,       // количество ядер процессора
                 3.0);    // частота процессора
 
         ComputerGame game3 = new ComputerGame("Сапер", PegiAgeRating.P18,
                 1,       // бюджет
-                128,     // минимальный объём видеопамяти в МБ
-                1,       // минимальный объём диска в ГБ
-                256,     // требуется оперативной памяти в Гб
+                16384,     // минимальный объём видеопамяти
+                1,       // минимальный объём диска
+                256,     // требуется оперативной памяти
                 64,      // количество ядер процессора
                 5.1);    // частота процессора
         List<ComputerGame> games = new List<ComputerGame>();
@@ -77,9 +77,9 @@ public class Program
 
             Requirements requirements = adapter.getRequirements();
             Console.WriteLine("\nСистемные требования:");
-            Console.WriteLine("Видеокарта: " + requirements.getGpuGb() + " МБ");
-            Console.WriteLine("Жесткий диск: " + requirements.getHDDGb() + " ГБ");
-            Console.WriteLine("Оперативная память: " + requirements.getRAMGb()/8 + " ГБ");
+            Console.WriteLine("Видеокарта: " + requirements.getGpuGb() + " Гб");
+            Console.WriteLine("Жесткий диск: " + requirements.getHDDGb() + " Гб");
+            Console.WriteLine("Оперативная память: " + requirements.getRAMGb() + " Гб");
             Console.WriteLine("Процессор: " + requirements.getCoresNum() + " ядер, " + requirements.getCpuGhz() + " ГГц\n\n");
         }
     }  
