@@ -1,0 +1,14 @@
+G:\3kyrs\1sem\c#lab\AdapterPattern\obj\Debug\net8.0\AdapterPattern.GeneratedMSBuildEditorConfig.editorconfig
+G:\3kyrs\1sem\c#lab\AdapterPattern\obj\Debug\net8.0\AdapterPattern.AssemblyInfoInputs.cache
+G:\3kyrs\1sem\c#lab\AdapterPattern\obj\Debug\net8.0\AdapterPattern.AssemblyInfo.cs
+G:\3kyrs\1sem\c#lab\AdapterPattern\obj\Debug\net8.0\AdapterPattern.csproj.CoreCompileInputs.cache
+G:\3kyrs\1sem\c#lab\AdapterPattern\bin\Debug\net8.0\AdapterPattern.exe
+G:\3kyrs\1sem\c#lab\AdapterPattern\bin\Debug\net8.0\AdapterPattern.deps.json
+G:\3kyrs\1sem\c#lab\AdapterPattern\bin\Debug\net8.0\AdapterPattern.runtimeconfig.json
+G:\3kyrs\1sem\c#lab\AdapterPattern\bin\Debug\net8.0\AdapterPattern.dll
+G:\3kyrs\1sem\c#lab\AdapterPattern\bin\Debug\net8.0\AdapterPattern.pdb
+G:\3kyrs\1sem\c#lab\AdapterPattern\obj\Debug\net8.0\AdapterPattern.dll
+G:\3kyrs\1sem\c#lab\AdapterPattern\obj\Debug\net8.0\refint\AdapterPattern.dll
+G:\3kyrs\1sem\c#lab\AdapterPattern\obj\Debug\net8.0\AdapterPattern.pdb
+G:\3kyrs\1sem\c#lab\AdapterPattern\obj\Debug\net8.0\AdapterPattern.genruntimeconfig.cache
+G:\3kyrs\1sem\c#lab\AdapterPattern\obj\Debug\net8.0\ref\AdapterPattern.dll
